@@ -3,16 +3,12 @@ import { NextRequest, NextResponse } from "next/server"
 // In production, integrate with real APIs for Bangladeshi travel agencies (e.g., ShareTrip, GoZayaan, Flight Expert, etc.)
 // This example uses fetch for demonstration; replace endpoints and authentication as needed.
 
-async function fetchFromAgency(type, params) {
+async function fetchFromAgency(type: string, params: Record<string, any>): Promise<any[]> {
   // Example: Replace with real API endpoints and authentication
   // params: { destination, date, ... }
-  let results = []
+  let results: any[] = []
   try {
     if (type === "flight") {
-      // Example: Fetch from ShareTrip
-      // const res = await fetch(`https://api.sharetrip.net/flights?from=${params.from}&to=${params.to}&date=${params.date}`)
-      // results = await res.json()
-      // For demonstration, return mock
       results = [
         {
           id: "flight1",
@@ -33,6 +29,26 @@ async function fetchFromAgency(type, params) {
           stops: 0,
           agency: "GoZayaan",
           bookingUrl: "https://gozayaan.com/flight/booking"
+        },
+        {
+          id: "flight3",
+          airline: "Novoair",
+          price: 210,
+          departure: "DAC",
+          arrival: "DEL",
+          stops: 0,
+          agency: "Flight Expert",
+          bookingUrl: "https://flightexpert.com/flight/booking"
+        },
+        {
+          id: "flight4",
+          airline: "Regent Airways",
+          price: 220,
+          departure: "DAC",
+          arrival: "KUL",
+          stops: 1,
+          agency: "Travelz",
+          bookingUrl: "https://travelz.com/flight/booking"
         }
       ]
     } else if (type === "hotel") {
@@ -54,6 +70,24 @@ async function fetchFromAgency(type, params) {
           rating: 4.7,
           agency: "GoZayaan",
           bookingUrl: "https://gozayaan.com/hotel/booking"
+        },
+        {
+          id: "hotel3",
+          name: "Le Meridien Dhaka",
+          price: 160,
+          location: "Dhaka",
+          rating: 4.8,
+          agency: "Flight Expert",
+          bookingUrl: "https://flightexpert.com/hotel/booking"
+        },
+        {
+          id: "hotel4",
+          name: "Radisson Blu Dhaka",
+          price: 150,
+          location: "Dhaka",
+          rating: 4.6,
+          agency: "Travelz",
+          bookingUrl: "https://travelz.com/hotel/booking"
         }
       ]
     } else if (type === "visa") {
@@ -71,6 +105,20 @@ async function fetchFromAgency(type, params) {
           price: 60,
           agency: "GoZayaan",
           detailsUrl: "https://gozayaan.com/visa/uk"
+        },
+        {
+          id: "visa3",
+          country: "Malaysia",
+          price: 55,
+          agency: "Flight Expert",
+          detailsUrl: "https://flightexpert.com/visa/malaysia"
+        },
+        {
+          id: "visa4",
+          country: "Thailand",
+          price: 45,
+          agency: "Travelz",
+          detailsUrl: "https://travelz.com/visa/thailand"
         }
       ]
     } else if (type === "package") {
@@ -90,6 +138,22 @@ async function fetchFromAgency(type, params) {
           duration: "3 days",
           agency: "GoZayaan",
           bookingUrl: "https://gozayaan.com/package/booking"
+        },
+        {
+          id: "pkg3",
+          title: "Sundarbans Adventure",
+          price: 400,
+          duration: "4 days",
+          agency: "Flight Expert",
+          bookingUrl: "https://flightexpert.com/package/booking"
+        },
+        {
+          id: "pkg4",
+          title: "Sylhet Tea Garden Tour",
+          price: 350,
+          duration: "3 days",
+          agency: "Travelz",
+          bookingUrl: "https://travelz.com/package/booking"
         }
       ]
     }
@@ -102,7 +166,7 @@ async function fetchFromAgency(type, params) {
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url)
-  const type = searchParams.get("type") // 'flight', 'hotel', 'visa', 'package'
+  const type = searchParams.get("type") || "" // 'flight', 'hotel', 'visa', 'package'
   const destination = searchParams.get("destination")
   const date = searchParams.get("date")
 
