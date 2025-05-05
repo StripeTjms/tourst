@@ -6,34 +6,28 @@ import { motion, useInView } from "framer-motion"
 
 const partners = [
   {
-    id: 1,
-    name: "Airline Partner",
-    logo: "/placeholder.svg?height=100&width=200",
+    name: "Biman Bangladesh Airlines",
+    logo: "https://www.biman-airlines.com/assets/images/logo.png",
   },
   {
-    id: 2,
-    name: "Hotel Chain",
-    logo: "/placeholder.svg?height=100&width=200",
+    name: "US-Bangla Airlines",
+    logo: "https://www.usbair.com.bd/images/logo.png",
   },
   {
-    id: 3,
-    name: "Travel Insurance",
-    logo: "/placeholder.svg?height=100&width=200",
+    name: "Novoair",
+    logo: "https://www.flynovoair.com/images/logo.png",
   },
   {
-    id: 4,
-    name: "Credit Card",
-    logo: "/placeholder.svg?height=100&width=200",
+    name: "Regent Airways",
+    logo: "https://www.flyregent.com/images/logo.png",
   },
   {
-    id: 5,
-    name: "Tourism Board",
-    logo: "/placeholder.svg?height=100&width=200",
+    name: "ShareTrip",
+    logo: "https://sharetrip.net/assets/images/logo.png",
   },
   {
-    id: 6,
-    name: "Car Rental",
-    logo: "/placeholder.svg?height=100&width=200",
+    name: "GoZayaan",
+    logo: "https://gozayaan.com/images/logo.svg",
   },
 ]
 
@@ -54,14 +48,14 @@ export function TrustedPartners() {
         <div ref={ref} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
           {partners.map((partner, index) => (
             <motion.div
-              key={partner.id}
+              key={partner.name}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="flex justify-center"
             >
               <div className="relative h-16 w-32 grayscale hover:grayscale-0 transition-all duration-300">
-                <Image src={partner.logo || "/placeholder.svg"} alt={partner.name} fill className="object-contain" />
+                <Image src={partner.logo} alt={partner.name} fill className="object-contain" />
               </div>
             </motion.div>
           ))}

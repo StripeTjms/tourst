@@ -11,19 +11,19 @@ export function Hero() {
 
   const slides = [
     {
-      image: "/placeholder.svg?height=1080&width=1920",
+      image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca",
       title: "Discover the World's Most Amazing Places",
       subtitle: "Compare and book flights, hotels, and tour packages from multiple vendors",
       cta: "Start Exploring",
     },
     {
-      image: "/placeholder.svg?height=1080&width=1920",
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
       title: "Create Your Perfect Travel Experience",
       subtitle: "Customize your own travel packages with our easy-to-use tools",
       cta: "Build Your Trip",
     },
     {
-      image: "/placeholder.svg?height=1080&width=1920",
+      image: "https://images.unsplash.com/photo-1464983953574-0892a716854b",
       title: "Exclusive Deals from Top Travel Agencies",
       subtitle: "Find the best prices on flights, hotels, and tour packages",
       cta: "View Deals",

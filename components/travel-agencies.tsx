@@ -12,8 +12,8 @@ const agencies = [
   {
     id: 1,
     name: "ShareTrip",
-    logo: "/placeholder-logo.png",
-    cover: "/placeholder.jpg",
+    logo: "https://sharetrip.net/assets/images/logo.png",
+    cover: "https://sharetrip.net/assets/images/banner/banner-1.jpg",
     location: "Dhaka, Bangladesh",
     rating: 4.9,
     reviews: 1200,
@@ -24,8 +24,8 @@ const agencies = [
   {
     id: 2,
     name: "GoZayaan",
-    logo: "/placeholder-logo.svg",
-    cover: "/placeholder.jpg",
+    logo: "https://gozayaan.com/images/logo.svg",
+    cover: "https://gozayaan.com/images/banner/banner-1.jpg",
     location: "Dhaka, Bangladesh",
     rating: 4.8,
     reviews: 1100,
@@ -36,8 +36,8 @@ const agencies = [
   {
     id: 3,
     name: "Flight Expert",
-    logo: "/placeholder-logo.png",
-    cover: "/placeholder.jpg",
+    logo: "https://www.flightexpert.com/images/logo.png",
+    cover: "https://www.flightexpert.com/images/banner/banner-1.jpg",
     location: "Dhaka, Bangladesh",
     rating: 4.7,
     reviews: 900,
@@ -48,8 +48,8 @@ const agencies = [
   {
     id: 4,
     name: "Travelz",
-    logo: "/placeholder-logo.svg",
-    cover: "/placeholder.jpg",
+    logo: "https://www.travelz.com.bd/images/logo.png",
+    cover: "https://www.travelz.com.bd/images/banner/banner-1.jpg",
     location: "Dhaka, Bangladesh",
     rating: 4.6,
     reviews: 800,

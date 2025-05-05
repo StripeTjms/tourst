@@ -22,7 +22,7 @@ const categories = [
     title: "Flights",
     description: "Find the best deals on flights worldwide",
     icon: <PlaneTakeoff className="h-10 w-10 text-primary" />,
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://images.unsplash.com/photo-1464037866556-6812c9d1c72e",
     link: "/services/flights",
   },
   {
@@ -30,7 +30,7 @@ const categories = [
     title: "Hotels",
     description: "Book accommodations that fit your style and budget",
     icon: <Building2 className="h-10 w-10 text-primary" />,
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
     link: "/services/hotels",
   },
   {
@@ -38,7 +38,7 @@ const categories = [
     title: "Tour Packages",
     description: "All-inclusive packages for hassle-free travel",
     icon: <Package className="h-10 w-10 text-primary" />,
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
     link: "/services/packages",
   },
   {
@@ -46,7 +46,7 @@ const categories = [
     title: "Visa Services",
     description: "Streamlined visa application process",
     icon: <Stamp className="h-10 w-10 text-primary" />,
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
     link: "/services/visa",
   },
   {
@@ -54,7 +54,7 @@ const categories = [
     title: "Car Rentals",
     description: "Rent vehicles for your journey",
     icon: <Car className="h-10 w-10 text-primary" />,
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://images.unsplash.com/photo-1511918984145-48de785d4c4e",
     link: "/services/cars",
   },
   {
@@ -62,7 +62,7 @@ const categories = [
     title: "Activities",
     description: "Discover exciting experiences at your destination",
     icon: <Palmtree className="h-10 w-10 text-primary" />,
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99",
     link: "/services/activities",
   },
   {
@@ -70,7 +70,7 @@ const categories = [
     title: "Dining",
     description: "Reserve tables at top restaurants worldwide",
     icon: <UtensilsCrossed className="h-10 w-10 text-primary" />,
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
     link: "/services/dining",
   },
   {
@@ -78,7 +78,7 @@ const categories = [
     title: "Events & Shows",
     description: "Get tickets to concerts, sports, and more",
     icon: <Ticket className="h-10 w-10 text-primary" />,
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99",
     link: "/services/events",
   },
   {
@@ -86,7 +86,7 @@ const categories = [
     title: "Cruises",
     description: "Explore the seas with luxury cruise packages",
     icon: <Ship className="h-10 w-10 text-primary" />,
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
     link: "/services/cruises",
   },
   {
@@ -94,7 +94,7 @@ const categories = [
     title: "Adventure",
     description: "Thrilling experiences for adventure seekers",
     icon: <Tent className="h-10 w-10 text-primary" />,
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99",
     link: "/services/adventure",
   },
 ]

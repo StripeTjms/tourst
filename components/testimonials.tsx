@@ -9,37 +9,37 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
+    name: "Ayesha Rahman",
     location: "New York, USA",
-    avatar: "/placeholder.svg?height=100&width=100",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
     rating: 5,
     text: "Toureest made planning our family vacation so easy! We were able to compare different packages and found the perfect one for our budget. The customer service was exceptional when we needed to make some last-minute changes.",
     destination: "Thailand",
   },
   {
     id: 2,
-    name: "Michael Chen",
+    name: "Tanvir Hasan",
     location: "Toronto, Canada",
-    avatar: "/placeholder.svg?height=100&width=100",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
     rating: 5,
     text: "I've used many travel booking platforms before, but Toureest stands out with its user-friendly interface and comprehensive options. I was able to customize my European tour exactly how I wanted it. Will definitely use again!",
     destination: "Europe",
   },
   {
     id: 3,
-    name: "Emma Rodriguez",
+    name: "Farzana Islam",
     location: "Sydney, Australia",
-    avatar: "/placeholder.svg?height=100&width=100",
+    avatar: "https://randomuser.me/api/portraits/women/68.jpg",
     rating: 4,
     text: "The visa service provided by Toureest saved me so much time and hassle. The step-by-step guidance made the process straightforward, and I got my visa approved without any issues. Highly recommend their services!",
     destination: "Japan",
   },
   {
     id: 4,
-    name: "Ahmed Hassan",
+    name: "Rashed Chowdhury",
     location: "Dubai, UAE",
-    avatar: "/placeholder.svg?height=100&width=100",
-    rating: 5,
+    avatar: "https://randomuser.me/api/portraits/men/65.jpg",
+    rating: 4,
     text: "What impressed me most was how Toureest connected me with local travel agencies that I wouldn't have found otherwise. The package I booked included unique experiences that made my trip truly memorable.",
     destination: "Maldives",
   },
@@ -85,7 +85,7 @@ export function Testimonials() {
                 <div className="flex-shrink-0">
                   <Avatar className="h-24 w-24 border-4 border-background">
                     <AvatarImage
-                      src={testimonials[currentIndex].avatar || "/placeholder.svg"}
+                      src={testimonials[currentIndex].avatar}
                       alt={testimonials[currentIndex].name}
                     />
                     <AvatarFallback>{testimonials[currentIndex].name.charAt(0)}</AvatarFallback>

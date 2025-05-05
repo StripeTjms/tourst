@@ -88,7 +88,7 @@ export function PackageMap() {
 
           <div className="relative w-full h-[400px] bg-muted rounded-lg overflow-hidden mb-6">
             {/* This would be a real map in production */}
-            <div className="absolute inset-0 bg-[url('/placeholder.svg?height=400&width=800')] bg-cover bg-center">
+            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb')] bg-cover bg-center">
               {/* Map pins */}
               {filteredLocations.map((location) => (
                 <button
