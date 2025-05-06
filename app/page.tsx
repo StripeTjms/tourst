@@ -9,11 +9,15 @@ import { Testimonials } from "@/components/home/testimonials"
 import { Newsletter } from "@/components/home/newsletter"
 import { TrustedPartners } from "@/components/home/trusted-partners"
 import { ScrollReveal } from "@/components/ui/scroll-reveal"
+import FlightSearch from "@/components/search/FlightSearch"
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <div className="container mx-auto -mt-32 z-10 relative">
+        <FlightSearch />
+      </div>
       <SearchSection />
       <ScrollReveal>
         <FeaturedDeals />
